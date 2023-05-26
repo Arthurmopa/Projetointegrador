@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style4.css">
+    <title>Central Bus</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/Logo 2 2.png" alt="logo">
+            </div>
+            <ul>
+                <a href=""> Home</a>
+                <a href="./indexokkk.html">Login</a>
+                <a href="">Serviços</a>
+                <a href="" class="view-plans">Quem somos?</a>
+                <img src="images/bg-pattern-mobile-nav.svg" class="bg-pattern-nav">
+            </ul>
+            <div class="menu-icon">
+                <img src="images/icon-hamburger.svg">
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="container">
+            <div class="banner__text">
+                <div class="line"></div>
+                <h1>Central Bus</h1>
+                <p>
+                    Devido aos problemas que trabalhadores e estudantes enfrentam enquanto andam de ônibus, como os problemas de superlotação e atrasos, pensamos no aplicativo com o intuito de solucionar esses problemas.
+                </p>
+                <button class="btn">Veja nossos planos</button>
+            </div>
+            <div class="banner__img">
+                <picture>
+                    <source media="(max-width:800px)" srcset="images/image-intro-mobile.jpg">
+       
+                </picture>
+            </div>
+        </div>
+
+        <img src="images/Imagem do WhatsApp de 2023-05-18 à(s) 18.01.11.jpg" class="pattern right" alt="">
+    </section>
+    <section class="diferent">
+        <div class="container">
+            <div class="line"></div>
+            <h2 class="h2">
+              Nossa proposta</h2>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="images/icon-snappy-process.svg" alt="">
+                    <p class="titulo">Rápido acesso</p>
+                    <p class="description">Além disso, temos uma ampla gama de rotas disponíveis, abrangendo diversos destinos para atender às suas necessidades de viagem. Seja uma viagem de lazer, uma visita a parentes ou uma viagem de negócios, temos opções para você. Nossa equipe de atendimento ao cliente está pronta para ajudá-lo a planejar sua jornada.</p>
+                </div>
+                <div class="card-item">
+                    <img src="images/icon-affordable-prices.svg" alt="">
+                    <p class="titulo"> Obtenha a versão paga</p>
+                    <p class="description">Reservas prioritárias: Você terá a vantagem de reservar seus assentos preferidos com antecedência. Não importa se você gosta de um assento na janela para desfrutar das vistas panorâmicas ou de um assento no corredor para maior comodidade, você poderá escolher antes mesmo de embarcar. </p>
+                </div>
+                <div class="card-item">
+                    <img src="images/icon-people-first.svg" alt="">
+                    <p class="titulo">Seu perfil</p>
+                    <p class="description"> Nossa empresa valoriza a confiança que você deposita em nós ao utilizar nosso aplicativo. Implementamos medidas de segurança avançadas para proteger suas informações pessoais contra acesso não autorizado, uso indevido ou divulgação. Utilizamos criptografia de dados para proteger seus dados pessoais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="find">
+        <div class="container">
+            <div class="find-background">
+                <h2 class="h2">Conheça <br> Nossos diversos serviços</h2>
+                <a href="#" style="margin-left: auto;position: relative;z-index:9;" class="btn">CLIQUE AQUI !</a>
+                <img src="images/bg-pattern-how-we-work-desktop.svg" class="pattern-find" alt="">
+            </div>
+    </section>
+    <footer class="footer">
+        <img class="patern" src="images/bg-pattern-footer-desktop.svg" alt="">
+        <div class="container">
+            
+            <div class="footer-header">
+                <div class="logo-footer">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="medias-socias">
+                    <img src="images/icon-facebook.svg" alt="">
+                    <img src="images/icon-twitter.svg" alt="">
+                    <img src="images/icon-pinterest.svg" alt="">
+                    <img src="images/icon-instagram.svg" alt="">
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div>
+                    <h3>Our Company</h3>
+                    <ul class="nav-links">
+                        <a href="#">Como Trabalhamos</a>
+                        <a href="#">A Central Bus</a>
+                        <a href="#">Planos</a>
+                        <a href="#">review</a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Help me</h3>
+                    <ul class="nav-links">
+                        <a href="#">FAQ</a>
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Cookies</a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul class="nav-links">
+                        <a href="#">Vendas</a>
+                        <a href="#">Suporte</a>
+                        <a href="#">live chat</a>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Others</h3>
+                    <ul class="nav-links">
+                        <a href="#">Carreira</a>
+                        <a href="#">Imprensa</a>
+                        <a href="#">Licenças</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+        menuIcon.addEventListener('click', () => {
+            if (nav.classList.contains('open')) {
+                nav.classList.remove('open');
+                menuIcon.querySelector('img').src = 'images/icon-hamburger.svg';
+            } else {
+                nav.classList.add('open');
+                menuIcon.querySelector('img').src = 'images/icon-close.svg';
+            }
+        });
+    </script>
+</body>
+
+</html>
